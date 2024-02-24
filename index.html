@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>VidSense</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">VidSense</div>
+            <ul class="nav-links">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Instructions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <span id="eye">
+                <img src="eye.png" alt="VidSense Logo">
+            </span>
+            <h1>VidSense</h1>
+            <div class="upload-box">
+                <input type="file" id="audioFile" accept="audio/*" onchange="displayFileName()">
+                <label for="audioFile">Choose Audio File</label>
+                <span id="fileName" style="display: none;"></span>
+            </div>
+            <button class="summarize-btn" onclick="handleUpload()">Transcript</button>
+            <div class="audio-player" id="audioPlayer">
+                <!-- Audio player will be displayed here -->
+            </div>
+            <div class="transcript" id="transcript">
+                <!-- Transcript will be displayed here -->
+            </div>
+            <div id="loading" style="display: none;">Loading...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
