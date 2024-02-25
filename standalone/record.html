@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Screen Recording with Audio</title>
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <link rel="stylesheet" href="record-styles.css">
+    <link rel="stylesheet" href="back.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a id="vid" href="index.html">
+              <img src="eye.png">
+              VidSense.
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/apoorvsxna/Mimir/releases">Extension</a>
+            <a href="https://github.com/apoorvsxna/Mimir">GitHub</a>
+            <a href="instructions.html">Instructions</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Are you ready to record?</h1>
+        <div class="buttons">
+            <button id="startRecording">Start Recording</button>
+            <button id="stopRecording" disabled>Stop Recording</button>
+        </div>
+        <video id="recordedVideo" controls></video>
+    </div>
+    
+    
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+
+        const startRecording = async () => {
+            try {
+                const stream = await navigator.mediaDevices.getDisplayMedia({
+                    video: {
+                        mediaSource: 'screen'
+                    },
+                    audio: {
+ 
+                        mediaSource: 'audio'
+                    }
+                });
+                mediaRecorder = new RecordRTC(stream, {
+                    type: 'video'
+                });
+                mediaRecorder.startRecording();
+                document.getElementById('startRecording').disabled = true;
+                document.getElementById('stopRecording').disabled = false;
+            } catch (error) {
+                console.error('Error accessing media devices: ', error);
+            }
+        };
+
+        const stopRecording = () => {
+            mediaRecorder.stopRecording(() => {
+                let blob = mediaRecorder.getBlob();
+                let videoUrl = URL.createObjectURL(blob);
+                document.getElementById('recordedVideo').src = videoUrl;
+                document.getElementById('startRecording').disabled = false;
+                document.getElementById('stopRecording').disabled = true;
+            });
+        };
+
+        document.getElementById('startRecording').addEventListener('click', startRecording);
+        document.getElementById('stopRecording').addEventListener('click', stopRecording);
+    </script>
+</body>
+</html>

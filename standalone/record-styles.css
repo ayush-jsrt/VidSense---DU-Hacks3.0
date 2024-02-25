@@ -1,0 +1,155 @@
+/* Reset some default styles */
+body, html {
+    background-image: url("https://wallpapercave.com/wp/wp2003030.png");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #d4d4d4;
+}
+
+a,a:hover,a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body > nav > div{
+    max-width: 800px;
+    padding: 20px;
+}
+
+body > div{
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(152, 152, 152, 0.389);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 4rem; /* Adjust this size as needed */
+    vertical-align:middle;
+    height: auto;
+    display: inline;
+    margin: 0 auto;
+}
+
+h1{
+    vertical-align: middle;
+    display: inline;
+    color: #f9f9f9
+
+}
+
+
+.main-content {
+    text-align: center;
+    background-color: rgba(135, 135, 135, 0.54);
+    width: 50%;
+    padding: 20px 0px 40px 0px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.upload-box label {
+    display: block;
+    background-color: #ff3d00;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+#links{
+    margin-left: 40%;
+    justify-self: right;
+}
+
+#vid{
+    color: #f33c04e4;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+video{
+    height: 200px;
+    border-radius: 10px;
+}
+
+button{
+    transition: 0.2s;
+    font-weight: bold;
+    color: white;
+    background-color: #ff3d00;
+    height: 45px;
+    width: 150px;
+    margin: 25px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #cd3202;
+}
+
+.container{
+    margin-top: 65px;
+    height: 400px;
+    width: 600px;
+    backdrop-filter: blur(2px);
+}
+
+nav {
+    margin: 25px;
+    margin-right: 65px;
+    margin-left: 65px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #ffffffcf;
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 94, 0, 0.279); /* Light gray navbar */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav  a {
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+     color: #dd3704
+  }
