@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Summary and QA</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a id="vid" href="https://ayush-jsrt.github.io/VidSense---DU-Hacks3.0/">
+                <img src="standalone/eye.png" alt="">
+                VidSense.
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/ayush-jsrt/VidSense---DU-Hacks3.0/releases">Extension</a>
+            <a href="https://github.com/ayush-jsrt/VidSense---DU-Hacks3.0">GitHub</a>
+            <a href="record.html">Record</a>
+            <a href="summary.html">Summarize</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Summary and QA</h1>
+        <div class="transcript-input">
+            <label for="transcriptInput">Enter Transcript:</label>
+            <textarea id="transcriptInput" rows="10" cols="50"></textarea>
+        </div>
+            <button class="summary-btn" onclick="handleSummary()">Summary</button>
+        <div class="output">
+            <h2>Summary:</h2>
+            <div id="summaryOutput"></div>
+        </div>
+    </div>
+
+    <script src="summary.js"></script>
+</body>
+
+</html>
