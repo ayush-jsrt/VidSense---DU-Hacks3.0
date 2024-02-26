@@ -45,7 +45,7 @@ img {
 h1{
     vertical-align: middle;
     display: inline;
-    color: #f9f9f9
+    color: #ff3d00
 
 }
 
@@ -101,6 +101,7 @@ video{
 }
 
 button{
+    
     transition: 0.2s;
     font-weight: bold;
     color: white;
@@ -167,6 +168,19 @@ nav {
     transition: all 0.2s ease-in-out;
   }
   
-  nav a:hover {
+  nav a:hover 
+  {
      color: #dd3704
+  }
+
+  label{
+    color: #dd3704;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .transcript-input
+  {
+    font-family: 'font-family: 'Space Grotesk', sans-serif;';
+    display: block;
   }
