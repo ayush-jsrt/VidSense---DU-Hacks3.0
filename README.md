@@ -4,7 +4,7 @@
 
 To sideload, first, download the entire code as a zip and extract it. Next, go to the "Manage Extensions" page, and enable developer options. Now, click on "Load unpacked" and select the "extension" folder from the code you just extracted. The extension should now show up in the list of extensions and is ready to use.
 ## Website ##
-no installation is required for usage.just simply tap on the link https://github.com/apoorvsxna/VidSense-Hackathon
+no installation is required for usage.just simply tap on the link https://ayush-jsrt.github.io/VidSense---DU-Hacks3.0/
 
 # Usage
 ## Browser extension ##
