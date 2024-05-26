@@ -1,23 +1,29 @@
 # Installation 
 ## Browser extension ##
- you must sideload the extension to your browser. As of now, the extension has been tested on Edge but it should work on all Chromium-based browsers (i.e. Chrome, Edge, Brave and so on.)
+ You must sideload the extension to your browser. As of now, the extension has been tested on Edge but it should work on all Chromium-based browsers (i.e. Chrome, Edge, Brave and so on).
 
-To sideload, first, download the entire code as a zip and extract it. Next, go to the "Manage Extensions" page, and enable developer options. Now, click on "Load unpacked" and select the "extension" folder from the code you just extracted. The extension should now show up in the list of extensions and is ready to use.
+- To sideload, first, download the entire code as a zip and extract it.
+- Next, go to the "Manage Extensions" page, and enable developer options.
+- Now, click on "Load unpacked" and select the "extension" folder from the code you just extracted.
+- The extension should now show up in the list of extensions and is ready to use.
+  
 ## Website ##
-no installation is required for usage.just simply tap on the link https://ayush-jsrt.github.io/VidSense---DU-Hacks3.0/
+   No installation is required for usage.  
+   Simply tap on the link → https://ayush-jsrt.github.io/VidSense---DU-Hacks3.0/
 
 # Usage
 ## Browser extension ##
-Open the YouTube video based on which you would like to ask a question.
-Open the extension.
-Type in a question and click on "Answer" for question answering or click on"summarize" to get a quick summary.
-The answer would now be displayed in the answer text box.
+- Open the YouTube video based on which you would like to ask a question.
+- Open the extension.
+- Type in a question and click on "Answer" for question answering or click on"summarize" to get a quick summary.
+- The answer would now be displayed in the answer text box.
 ## Website ##
-screen record any lecture,meeting,podcast.
-download the screen recording and convert it to audio.
-upload the audio to the Vidsense website
-now click on "transcript"to genetrate the transcript of the given audio.
-now click on "summarize" to genetrate the full summaary of the video or clcik on"answer" for question answers.
+
+- Screen-record meetings, lectures or podcasts as required.
+- Download the screen recording and convert it to audio. (You might have to use a third-party application or website to convert the video to audio.)
+- Upload the audio to the Vidsense website.
+- Next, click on "transcript" to generate the transcript of the given audio.
+- Press "summarize" to generate the full summary of the video or click on "answer" for question-answers.
 ## Extension in action #
 ![Screenshot (60)](https://github.com/apoorvsxna/VidSense/assets/112375644/d0e708ab-e176-4e00-ac35-4151250a87d5)
 ![Screenshot (62)](https://github.com/apoorvsxna/VidSense/assets/112375644/e9210737-fcfe-466a-a82f-1e8ebdf7c1c3)
