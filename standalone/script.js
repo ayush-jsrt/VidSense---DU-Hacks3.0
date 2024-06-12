@@ -2,7 +2,7 @@ async function query(data) {
     const response = await fetch(
         "https://api-inference.huggingface.co/models/openai/whisper-small",
         {
-            headers: { Authorization: "Bearer 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" },
+            headers: { Authorization: "Bearer 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" },
             method: "POST",
             body: JSON.stringify({ inputs: data }),
         }
