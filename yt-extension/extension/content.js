@@ -3,7 +3,7 @@ async function query(data) {
     const response = await fetch(
       "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2",
       {
-        headers: { Authorization: `Bearer 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` },
+        headers: { Authorization: `Bearer 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` },
         method: "POST",
         body: JSON.stringify(data),
       }
