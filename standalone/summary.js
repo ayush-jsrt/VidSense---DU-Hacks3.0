@@ -6,7 +6,7 @@ function handleSummary() {
         const response = await fetch(
             "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
             {
-                headers: { Authorization: "Bearer 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" },
+                headers: { Authorization: "Bearer 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" },
                 method: "POST",
                 body: JSON.stringify(data),
             }
